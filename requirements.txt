@@ -23,4 +23,4 @@
  
  MódulosyPaquetes (Lección 6):
  Organizar el código en módulosypaquetes, separando las funcionalidades como scraping, análisis, y reporte en diferentes 
- módulos
+ módulos.
