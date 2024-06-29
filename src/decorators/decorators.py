@@ -1,7 +1,7 @@
 import time # Importamos el modulo time para medir el tiempo de ejecucion.
 import logging # Importamos el modulo logging para registrar mensajes.
 
-# Configuramos el logger.
+# Configuramos el logger. 
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
