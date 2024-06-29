@@ -23,7 +23,7 @@ def parse_product(product):
       
 def scrape(url):
     """Funcion principal del scraping"""
-    page_content = fetch_page(url) #Obtenemos el codigo base de la pagina
+    page_content = fetch_page(url) #Obtenemos el codigo base de la pagina.
     soup = BeautifulSoup(page_content, "html.parser") #Analizamos el contenido de la pagina con Beautiful Soup
     products = soup.find_all("div", class_="thumbnail") # Encontramos todos los elementos div con la clase "thumbnail" que representan productos
     products_data=[] # Inicializamos una lista para almacenar los datos de los productos.
