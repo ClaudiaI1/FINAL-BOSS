@@ -36,7 +36,7 @@ def analyze_data(df):
     return highestPrices
 
 @logit # Añadimos el loggin a la funcion.
-@timeit # Medimos el tiempo de ejecucion de la funcion
+@timeit # Medimos el tiempo de ejecucion de la funcion.
 def save_clean_data(df, outputh_path):
     """Guardamos los datos limpios en un archivo CSV"""
     if outputh_path.endswith(".csv"):
@@ -47,11 +47,11 @@ def save_clean_data(df, outputh_path):
         raise ValueError("Unsupported file format") # Lanzamos un error si el formato del archivo no es compatible
    # print(f"Clean data saved to {outputh_path}")    
     
-if __name__ == "__main__": # Permitimos que el script solo se ejecute en este archivo
+if __name__ == "__main__": # Permitimos que el script solo se ejecute en este archivo.
     data_path = "data/raw/products.csv" # Definimos la ruta del archivo de datos SIN procesar.
     outputh_path = "data/processed/cleaned_products.csv" # Definimos la ruta del archivo de datos procesados
     
-    df = load_data(data_path) # Cargamos los datos de un archivo especifico
+    df = load_data(data_path) # Cargamos los datos de un archivo especifico.
     df = clean_data(df) # Limpiamos los datos cargados
     analyze_data(df) # Realizamos un analisis basico de la data.
     os. makedirs("data/processed", exist_ok=True) # Creamos el directorio para los datos procesados si no existe
